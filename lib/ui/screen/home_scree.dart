@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:paynet_clone/ui/widget/add_card_widget/add_card.dart';
-import 'package:paynet_clone/ui/widget/appbar_home_widget.dart';
-import 'package:paynet_clone/ui/widget/home_page/card_widgets/basic_widget.dart';
-import 'package:paynet_clone/ui/widget/home_page/card_widgets/security_card_widget.dart';
-import 'package:paynet_clone/ui/widget/home_page/reverse_card_widget.dart/reverse_card.dart';
+import 'package:paynet_clone/widget/add_card_widget/add_card.dart';
+import 'package:paynet_clone/widget/appbar_home_widget.dart';
+import 'package:paynet_clone/widget/home_page/card_widgets/basic_widget.dart';
+import 'package:paynet_clone/widget/home_page/card_widgets/security_card_widget.dart';
+import 'package:paynet_clone/widget/home_page/reverse_card_widget.dart/reverse_card.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -64,21 +64,6 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         )),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-          showUnselectedLabels: true,
-          selectedItemColor: Colors.green,
-          unselectedItemColor: Colors.black,
-          selectedLabelStyle: const TextStyle(color: Colors.black),
-          items: const [
-            BottomNavigationBarItem(
-                backgroundColor: Colors.white,
-                label: 'Asosiy',
-                icon: Icon(Icons.home)),
-            BottomNavigationBarItem(
-                label: "O'tkazmalar", icon: Icon(Icons.currency_exchange)),
-            BottomNavigationBarItem(label: "To'lov", icon: Icon(Icons.payment)),
-            BottomNavigationBarItem(label: "Tarix", icon: Icon(Icons.timer)),
-          ]),
     );
   }
 }

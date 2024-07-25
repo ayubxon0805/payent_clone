@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:paynet_clone/ui/home_scree.dart';
+import 'package:paynet_clone/ui/screen/home_scree.dart';
 
 class PinCodeWidget extends StatefulWidget {
   const PinCodeWidget({super.key});

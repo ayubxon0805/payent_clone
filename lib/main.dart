@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:paynet_clone/splash/splash_screen.dart';
-import 'package:paynet_clone/test.dart';
-import 'package:paynet_clone/ui/home_scree.dart';
+import 'package:paynet_clone/ui/MainScreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +15,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: const SplashScreen(),
+      home: const ControlAllScreen(),
     );
   }
 }

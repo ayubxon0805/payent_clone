@@ -16,7 +16,7 @@ class AppHomeWidget extends StatelessWidget {
           '+998 88 940 21 22 >',
           style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
         ),
-        const SizedBox(width: 45),
+        const Spacer(),
         IconButton(
             onPressed: () {},
             iconSize: 30,
