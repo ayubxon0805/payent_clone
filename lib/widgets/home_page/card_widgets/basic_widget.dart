@@ -93,7 +93,61 @@ class PayCardWidget extends StatelessWidget {
                     showModalBottomSheet(
                       context: context,
                       builder: (context) {
-                        return Container();
+                        return SizedBox(
+                          width: MediaQuery.of(context).size.width,
+                          height: MediaQuery.of(context).size.height * 0.25,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    const Text(
+                                      'Qanday to\'ldirishni xohlaysiz?',
+                                      style: TextStyle(
+                                          fontSize: 22,
+                                          fontWeight: FontWeight.w700),
+                                    ),
+                                    IconButton(
+                                      onPressed: () {},
+                                      icon: const Icon(Icons.close),
+                                      iconSize: 27,
+                                    )
+                                  ],
+                                ),
+                              ),
+                              ListTile(
+                                title: const Text(
+                                  'Naqd pul bilan',
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.w600,
+                                      fontSize: 18),
+                                ),
+                                subtitle: const Text("Paynet punktida"),
+                                trailing: IconButton(
+                                    onPressed: () {},
+                                    icon: const Icon(
+                                        Icons.navigate_next_outlined)),
+                              ),
+                              ListTile(
+                                title: const Text(
+                                  'Uzcard Humo kartasi bilan',
+                                  style: TextStyle(
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.w600),
+                                ),
+                                subtitle: const Text("Paynet ilovasida"),
+                                trailing: IconButton(
+                                    onPressed: () {},
+                                    icon: const Icon(
+                                        Icons.navigate_next_outlined)),
+                              )
+                            ],
+                          ),
+                        );
                       },
                     );
                   },

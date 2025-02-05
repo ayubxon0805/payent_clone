@@ -32,9 +32,7 @@ class SearchBarWidget extends StatelessWidget {
               ),
               IconButton(
                 icon: const ImageIcon(AssetImage("assets/icons/scan.png")),
-                onPressed: () {
-                  // Add your onPressed code here!
-                },
+                onPressed: () {},
               ),
             ],
           ),

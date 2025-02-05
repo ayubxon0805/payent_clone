@@ -57,7 +57,7 @@ class CardWidget extends StatelessWidget {
                           CircleAvatar(
                             maxRadius: 15,
                             backgroundImage: NetworkImage(
-                                "https://play-lh.googleusercontent.com/-6eNFyH_LcDXOK_9aB7SiDhqIclKBjHXNbtzyGe86M4y2UdaHkfJnIr37TPzyGpvzkg=w240-h480-rw"),
+                                "https://uba.uz/upload/iblock/73f/bankipakyuli.jpg"),
                           ),
                           Text(
                             'Humo  ',

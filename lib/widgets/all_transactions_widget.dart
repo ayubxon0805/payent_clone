@@ -41,8 +41,8 @@ class AllTransactionsWidget extends StatelessWidget {
               'https://smebanking.agency/club/wp-content/uploads/sites/7/2024/09/TBC-Uzbekistan.jpg'),
           _buildTransferProfile(
               'Ayubxon',
-              'https://play-lh.googleusercontent.com/-6eNFyH_LcDXOK_9aB7SiDhqIclKBjHXNbtzyGe86M4y2UdaHkfJnIr37TPzyGpvzkg=w240-h480-rw',
-              'https://play-lh.googleusercontent.com/-6eNFyH_LcDXOK_9aB7SiDhqIclKBjHXNbtzyGe86M4y2UdaHkfJnIr37TPzyGpvzkg=w240-h480-rw'),
+              'https://uba.uz/upload/iblock/73f/bankipakyuli.jpg',
+              'https://uba.uz/upload/iblock/73f/bankipakyuli.jpg'),
         ],
       ),
     );

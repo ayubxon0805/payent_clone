@@ -28,7 +28,7 @@ class _PayPageState extends State<PayPage> {
       body: const Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Padding(
+          Padding(
             padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             child: Text(
               'So\'nggi o\'tkazmalar',

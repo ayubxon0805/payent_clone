@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:paynet_clone/ui/screens/profile_screen.dart';
 
 class AppHomeWidget extends StatelessWidget {
   const AppHomeWidget({super.key});
@@ -14,9 +15,18 @@ class AppHomeWidget extends StatelessWidget {
           height: 40,
         ),
         const SizedBox(width: 10),
-        const Text(
-          'Ayyubxon >',
-          style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
+        InkWell(
+          onTap: () {
+            Navigator.push(context, MaterialPageRoute(
+              builder: (context) {
+                return const ProfilePage();
+              },
+            ));
+          },
+          child: const Text(
+            'Ayyubxon >',
+            style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
+          ),
         ),
         const Spacer(),
         IconButton(
