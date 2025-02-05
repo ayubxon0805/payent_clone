@@ -47,7 +47,7 @@ class _EnterPassScreenState extends State<EnterPassScreen> {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
           Center(
             child:
                 Image.asset(width: 75, height: 75, 'assets/images/block.png'),
@@ -71,7 +71,7 @@ class _EnterPassScreenState extends State<EnterPassScreen> {
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Container(
+              SizedBox(
                 height: 130,
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -87,7 +87,7 @@ class _EnterPassScreenState extends State<EnterPassScreen> {
               ),
               Text(
                 message,
-                style: TextStyle(color: Colors.black),
+                style: const TextStyle(color: Colors.black),
               )
             ],
           ),
@@ -101,11 +101,11 @@ class _EnterPassScreenState extends State<EnterPassScreen> {
               childAspectRatio: 0.8 / 0.6,
             ),
             itemBuilder: (context, index) {
-              return Container(
+              return SizedBox(
                 width: 5,
                 height: 5,
                 child: index == 9
-                    ? SizedBox()
+                    ? const SizedBox()
                     : Center(
                         child: MaterialButton(
                           minWidth: 50,
@@ -117,20 +117,21 @@ class _EnterPassScreenState extends State<EnterPassScreen> {
                               clears = clears.map((e) => false).toList();
                               currentIndex--;
 
-                              if (currentIndex >= 0)
+                              if (currentIndex >= 0) {
                                 setState(() {
                                   clears[currentIndex] = true;
                                   actives[currentIndex] = false;
                                 });
-                              else {
+                              } else {
                                 currentIndex = 0;
                               }
 
                               return;
-                            } else
+                            } else {
                               inputText +=
                                   numbers[index == 10 ? index - 1 : index]
                                       .toString();
+                            }
                             if (inputText.length == 5) {
                               setState(() {
                                 clears = clears.map((e) => true).toList();
@@ -207,12 +208,12 @@ class _AniMatedBoxItemState extends State<AniMatedBoxItem>
       animation: animationController,
       builder: (context, child) {
         return Container(
-          margin: EdgeInsets.all(14),
+          margin: const EdgeInsets.all(14),
           child: Stack(
             children: [
               Container(),
               AnimatedContainer(
-                duration: Duration(microseconds: 800),
+                duration: const Duration(microseconds: 800),
                 width: 10,
                 height: 10,
                 decoration: BoxDecoration(

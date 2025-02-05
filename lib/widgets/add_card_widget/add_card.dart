@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 
 class CardWidget extends StatelessWidget {
+  const CardWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Row(
       children: <Widget>[
-        SizedBox(width: 20),
+        const SizedBox(width: 20),
         Container(
           decoration: BoxDecoration(
               color: Colors.white,
@@ -39,11 +41,44 @@ class CardWidget extends StatelessWidget {
                       icon: const Icon(Icons.add_circle_outline_outlined))
                 ],
               ),
-              const Text('715 535 so\'m'),
+              // ignore: avoid_unnecessary_containers
+              Container(
+                  decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 42, 168, 63),
+                      borderRadius: BorderRadius.circular(10)),
+                  width: 150,
+                  height: 80,
+                  child: const Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          CircleAvatar(
+                            maxRadius: 15,
+                            backgroundImage: NetworkImage(
+                                "https://play-lh.googleusercontent.com/-6eNFyH_LcDXOK_9aB7SiDhqIclKBjHXNbtzyGe86M4y2UdaHkfJnIr37TPzyGpvzkg=w240-h480-rw"),
+                          ),
+                          Text(
+                            'Humo  ',
+                            style: TextStyle(color: Colors.white),
+                          )
+                        ],
+                      ),
+                      SizedBox(height: 10),
+                      Text(
+                        '   715 535 so\'m',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.w600,
+                            fontSize: 15),
+                      ),
+                    ],
+                  )),
             ],
           ),
         ),
-        SizedBox(width: 25),
+        const SizedBox(width: 25),
         Container(
           decoration: BoxDecoration(
               color: Colors.white,
@@ -66,7 +101,7 @@ class CardWidget extends StatelessWidget {
                 "Keshbek-hisob",
                 style: TextStyle(fontSize: 17.0, fontWeight: FontWeight.bold),
               ),
-              SizedBox(height: 5),
+              const SizedBox(height: 5),
               const Text(
                 'Balans',
                 style: TextStyle(color: Colors.grey),
@@ -75,7 +110,7 @@ class CardWidget extends StatelessWidget {
                 '15 460 so\'m',
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.w700),
               ),
-              Spacer(),
+              const Spacer(),
               Container(
                 width: 300,
                 height: 110,
@@ -124,7 +159,7 @@ class CardWidget extends StatelessWidget {
                         const Spacer(),
                         Container(
                           decoration: BoxDecoration(
-                              color: Color.fromARGB(255, 168, 163, 163),
+                              color: const Color.fromARGB(255, 168, 163, 163),
                               borderRadius: BorderRadius.circular(4)),
                           width: 10,
                           height: 20,
@@ -132,7 +167,7 @@ class CardWidget extends StatelessWidget {
                         const Spacer(),
                         Container(
                           decoration: BoxDecoration(
-                              color: Color.fromARGB(255, 168, 163, 163),
+                              color: const Color.fromARGB(255, 168, 163, 163),
                               borderRadius: BorderRadius.circular(4)),
                           width: 10,
                           height: 30,
@@ -140,7 +175,7 @@ class CardWidget extends StatelessWidget {
                         const Spacer(),
                         Container(
                           decoration: BoxDecoration(
-                              color: Color.fromARGB(255, 168, 163, 163),
+                              color: const Color.fromARGB(255, 168, 163, 163),
                               borderRadius: BorderRadius.circular(4)),
                           width: 10,
                           height: 40,
@@ -148,7 +183,7 @@ class CardWidget extends StatelessWidget {
                         const Spacer(),
                         Container(
                           decoration: BoxDecoration(
-                              color: Color.fromARGB(255, 168, 163, 163),
+                              color: const Color.fromARGB(255, 168, 163, 163),
                               borderRadius: BorderRadius.circular(4)),
                           width: 10,
                           height: 60,
@@ -156,7 +191,7 @@ class CardWidget extends StatelessWidget {
                         const Spacer(),
                         Container(
                           decoration: BoxDecoration(
-                              color: Color.fromARGB(255, 168, 163, 163),
+                              color: const Color.fromARGB(255, 168, 163, 163),
                               borderRadius: BorderRadius.circular(4)),
                           width: 10,
                           height: 10,
@@ -164,7 +199,7 @@ class CardWidget extends StatelessWidget {
                         const Spacer(),
                         Container(
                           decoration: BoxDecoration(
-                              color: Color.fromARGB(255, 168, 163, 163),
+                              color: const Color.fromARGB(255, 168, 163, 163),
                               borderRadius: BorderRadius.circular(4)),
                           width: 10,
                           height: 30,
@@ -172,7 +207,7 @@ class CardWidget extends StatelessWidget {
                         const Spacer(),
                         Container(
                           decoration: BoxDecoration(
-                              color: Color.fromARGB(255, 168, 163, 163),
+                              color: const Color.fromARGB(255, 168, 163, 163),
                               borderRadius: BorderRadius.circular(4)),
                           width: 10,
                           height: 45,

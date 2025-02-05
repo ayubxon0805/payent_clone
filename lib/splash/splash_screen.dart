@@ -9,18 +9,16 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
- 
-
   @override
   Widget build(BuildContext context) {
     Future.delayed(const Duration(seconds: 4)).then(
       (value) => Navigator.push(context, MaterialPageRoute(
         builder: (context) {
-          return PinCodeWidget();
+          return const PinCodeWidget();
         },
       )),
     );
-    return Container(
+    return SizedBox(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
         child: Image.asset(

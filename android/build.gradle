@@ -3,6 +3,11 @@ allprojects {
         google()
         mavenCentral()
     }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.3.0'  // yoki 7.0.0
+
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
 }
 
 rootProject.buildDir = "../build"

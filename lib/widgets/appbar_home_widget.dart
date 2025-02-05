@@ -8,12 +8,14 @@ class AppHomeWidget extends StatelessWidget {
     return Row(
       children: [
         Image.asset(
-          "assets/images/paynet_circle.png",
-          width: 55,
-          height: 55,
+          color: Colors.green,
+          "assets/images/user.png",
+          width: 40,
+          height: 40,
         ),
+        const SizedBox(width: 10),
         const Text(
-          '+998 88 940 21 22 >',
+          'Ayyubxon >',
           style: TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
         ),
         const Spacer(),

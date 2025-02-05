@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:paynet_clone/ui/screen/payment_widget.dart';
+import 'package:paynet_clone/ui/screens/Search_payment_screen.dart';
+import 'package:paynet_clone/ui/screens/payment_widget.dart';
 
 class PayCardWidget extends StatelessWidget {
   const PayCardWidget({super.key});
@@ -171,7 +172,7 @@ class PayCardWidget extends StatelessWidget {
                   onTap: () {
                     Navigator.push(context, MaterialPageRoute(
                       builder: (context) {
-                        return const PayPage();
+                        return const SearcPaymentPage();
                       },
                     ));
                   },

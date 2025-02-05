@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class KartaCard extends StatelessWidget {
   final Map<String, String> karta;
 
-  const KartaCard(this.karta);
+  const KartaCard(this.karta, {super.key});
 
   @override
   Widget build(BuildContext context) {

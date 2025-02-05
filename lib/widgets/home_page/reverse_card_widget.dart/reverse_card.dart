@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class ReverseRoutePage extends StatefulWidget {
   const ReverseRoutePage({super.key});
@@ -65,7 +64,7 @@ class _ReverseRoutePageState extends State<ReverseRoutePage> {
             ElevatedButton(
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
-                    minimumSize: Size(350, 50),
+                    minimumSize: const Size(350, 50),
                     backgroundColor: Colors.white,
                     shape: RoundedRectangleBorder(
                       side: const BorderSide(color: Colors.black),

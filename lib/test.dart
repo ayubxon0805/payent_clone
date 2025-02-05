@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:paynet_clone/ui/screen/home_scree.dart';
+import 'package:paynet_clone/ui/screens/home_scree.dart';
 
 class PinCodeWidget extends StatefulWidget {
   const PinCodeWidget({super.key});
@@ -13,7 +13,6 @@ class _PinCodeWidgetState extends State<PinCodeWidget> {
   String enteredPin = '';
   bool isPinVisible = false;
 
-  /// this widget will be use for each digit
   Widget numButton(int number) {
     return Padding(
       padding: const EdgeInsets.only(top: 16),
@@ -54,7 +53,7 @@ class _PinCodeWidgetState extends State<PinCodeWidget> {
       body: SafeArea(
         child: Column(
           children: [
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Center(
               child:
                   Image.asset(width: 75, height: 75, 'assets/images/block.png'),
@@ -75,7 +74,7 @@ class _PinCodeWidgetState extends State<PinCodeWidget> {
               '+998 88 ... .. 22',
               style: TextStyle(fontWeight: FontWeight.w500, fontSize: 16),
             ),
-            Spacer(),
+            const Spacer(),
 
             /// pin code area
             Row(

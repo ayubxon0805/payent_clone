@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:paynet_clone/widget/add_card_widget/add_card.dart';
-import 'package:paynet_clone/widget/appbar_home_widget.dart';
-import 'package:paynet_clone/widget/home_page/card_widgets/basic_widget.dart';
-import 'package:paynet_clone/widget/home_page/card_widgets/security_card_widget.dart';
-import 'package:paynet_clone/widget/home_page/reverse_card_widget.dart/reverse_card.dart';
+import 'package:paynet_clone/widgets/add_card_widget/add_card.dart';
+import 'package:paynet_clone/widgets/appbar_home_widget.dart';
+import 'package:paynet_clone/widgets/home_page/card_widgets/basic_widget.dart';
+import 'package:paynet_clone/widgets/home_page/card_widgets/security_card_widget.dart';
+import 'package:paynet_clone/widgets/home_page/reverse_card_widget.dart/reverse_card.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -13,10 +13,19 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  bool _isMoneyVisible = true;
+
+  void _toggleMoneyVisibility() {
+    setState(() {
+      _isMoneyVisible = !_isMoneyVisible;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        elevation: 0,
         backgroundColor: Colors.white,
         title: const AppHomeWidget(),
       ),
@@ -42,17 +51,20 @@ class _HomeScreenState extends State<HomeScreen> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  const Text(
-                    "2 911 263 so'm",
-                    style: TextStyle(fontSize: 30, fontWeight: FontWeight.w700),
+                  Text(
+                    _isMoneyVisible ? "2 911 263 so'm" : "*  * * * so'm",
+                    style: const TextStyle(
+                        fontSize: 30, fontWeight: FontWeight.w700),
                   ),
                   Padding(
                     padding: const EdgeInsets.only(right: 12),
                     child: IconButton(
-                        onPressed: () {},
+                        onPressed: _toggleMoneyVisibility,
                         iconSize: 35,
                         color: Colors.grey.shade700,
-                        icon: const Icon(Icons.visibility_rounded)),
+                        icon: Icon(_isMoneyVisible
+                            ? Icons.visibility_rounded
+                            : Icons.visibility_off_rounded)),
                   )
                 ],
               ),
@@ -60,7 +72,7 @@ class _HomeScreenState extends State<HomeScreen> {
             const PayCardWidget(),
             const ReverseRoutePage(),
             const SecurityCard(),
-            CardWidget(),
+            const CardWidget(),
           ],
         )),
       ),
