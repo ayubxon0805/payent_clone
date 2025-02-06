@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:paynet_clone/test.dart';
+import 'package:paynet_clone/widgets/pincode_widget.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
