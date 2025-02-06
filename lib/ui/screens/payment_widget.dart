@@ -17,6 +17,7 @@ class _PayPageState extends State<PayPage> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         surfaceTintColor: Colors.white,
         backgroundColor: Colors.white,
         elevation: 0,
@@ -25,10 +26,10 @@ class _PayPageState extends State<PayPage> {
           style: TextStyle(fontWeight: FontWeight.w700),
         ),
       ),
-      body: const Column(
+      body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Padding(
+          const Padding(
             padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
             child: Text(
               'So\'nggi o\'tkazmalar',
@@ -42,9 +43,9 @@ class _PayPageState extends State<PayPage> {
           SearchBarWidget(
             title: "Karta yoki telefon",
           ),
-          AllTransactionsWidget(),
-          PaymentCards(),
-          TemplatesWidget()
+          const AllTransactionsWidget(),
+          const PaymentCards(),
+          const TemplatesWidget()
         ],
       ),
     );

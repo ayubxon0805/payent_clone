@@ -22,6 +22,7 @@ class _SearcPaymentPageState extends State<SearcPaymentPage> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         elevation: 0,
         backgroundColor: Colors.white,
         surfaceTintColor: Colors.white,
@@ -35,7 +36,7 @@ class _SearcPaymentPageState extends State<SearcPaymentPage> {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const SearchBarWidget(title: "Izlash"),
+            SearchBarWidget(title: "Izlash"),
             const TemplatesWidget(),
             const PaymentCategoriesWidget(
               title1: "Paynet \n QilvoR",

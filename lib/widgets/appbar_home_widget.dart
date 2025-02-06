@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:paynet_clone/ui/screens/notifications.dart';
 import 'package:paynet_clone/ui/screens/profile_screen.dart';
+import 'package:paynet_clone/ui/screens/support_screen.dart';
 
 class AppHomeWidget extends StatelessWidget {
   const AppHomeWidget({super.key});
@@ -30,14 +32,24 @@ class AppHomeWidget extends StatelessWidget {
         ),
         const Spacer(),
         IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return SupportPage();
+              }));
+            },
             iconSize: 30,
             icon: Icon(
-              Icons.headphones,
+              Icons.chat_bubble_outline,
               color: Colors.grey.shade600,
             )),
         IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => NotificationsPage(),
+                  ));
+            },
             iconSize: 30,
             icon: Icon(
               Icons.notifications,

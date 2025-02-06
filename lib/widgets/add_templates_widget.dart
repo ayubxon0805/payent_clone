@@ -13,7 +13,7 @@ class AddTemplatesWidget extends StatelessWidget {
         elevation: 0,
         title: const Text('Shablon qo\'shish'),
       ),
-      body: const SearchBarWidget(
+      body: SearchBarWidget(
         title: "Karta yoki telefon",
       ),
     );

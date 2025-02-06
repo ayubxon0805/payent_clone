@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:paynet_clone/ui/screens/support_screen.dart';
 import 'package:paynet_clone/widgets/pincode_widget.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
@@ -130,20 +132,39 @@ class ProfilePage extends StatelessWidget {
                       child: const Text("Qo'llab-quvvatlash",
                           style: TextStyle(fontWeight: FontWeight.w700)),
                     ),
-                    const ListTile(
-                      title: Text('Chat yordamchisi',
-                          style: TextStyle(fontWeight: FontWeight.w600)),
-                      trailing: Icon(Icons.chat),
+                    InkWell(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => SupportPage(),
+                            ));
+                      },
+                      child: ListTile(
+                        title: Text('Chat yordamchisi',
+                            style: TextStyle(fontWeight: FontWeight.w600)),
+                        trailing: Icon(Icons.chat),
+                      ),
                     ),
-                    const ListTile(
-                      title: Text("Qo'ng'iroq qilish",
-                          style: TextStyle(fontWeight: FontWeight.w600)),
-                      trailing: Icon(Icons.phone),
+                    InkWell(
+                      onTap: () {
+                        launchUrl(Uri.parse('https://www.paynet.uz/contacts'));
+                      },
+                      child: const ListTile(
+                        title: Text("Qo'ng'iroq qilish",
+                            style: TextStyle(fontWeight: FontWeight.w600)),
+                        trailing: Icon(Icons.phone),
+                      ),
                     ),
-                    const ListTile(
-                      title: Text("Email yozish",
-                          style: TextStyle(fontWeight: FontWeight.w600)),
-                      trailing: Icon(Icons.mail),
+                    InkWell(
+                      onTap: () {
+                        launchUrl(Uri.parse('https://www.paynet.uz/contacts'));
+                      },
+                      child: const ListTile(
+                        title: Text("Email yozish",
+                            style: TextStyle(fontWeight: FontWeight.w600)),
+                        trailing: Icon(Icons.mail),
+                      ),
                     ),
                   ],
                 ),
@@ -171,11 +192,16 @@ class ProfilePage extends StatelessWidget {
                       child: const Text('Foydali ma\'lumot',
                           style: TextStyle(fontWeight: FontWeight.w600)),
                     ),
-                    const ListTile(
-                      title: Text('Paynet haiqda',
-                          style: TextStyle(fontWeight: FontWeight.w600)),
-                      leading: Icon(Icons.warning_amber_rounded),
-                      trailing: Icon(Icons.navigate_next_outlined),
+                    InkWell(
+                      onTap: () {
+                        launchUrl(Uri.parse('https://chat.paynet.uz'));
+                      },
+                      child: const ListTile(
+                        title: Text('Paynet haiqda',
+                            style: TextStyle(fontWeight: FontWeight.w600)),
+                        leading: Icon(Icons.warning_amber_rounded),
+                        trailing: Icon(Icons.navigate_next_outlined),
+                      ),
                     ),
                     const ListTile(
                       title: Text('Ma\'lumotnoma',

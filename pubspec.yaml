@@ -43,6 +43,7 @@ dependencies:
   font_awesome_flutter: ^10.8.0
   shared_preferences: ^2.5.1
   awesome_dialog: ^3.2.1
+  url_launcher: ^6.3.1
   
 
 dev_dependencies:

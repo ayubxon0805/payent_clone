@@ -175,7 +175,7 @@ class _PinCodeWidgetState extends State<PinCodeWidget> {
               style: TextStyle(fontWeight: FontWeight.w400),
             ),
             const Text(
-              '+998 88 ... .. 22',
+              '+998 77 ... .. 07',
               style: TextStyle(fontWeight: FontWeight.w500, fontSize: 16),
             ),
             const Spacer(),
