@@ -54,10 +54,14 @@ class CardWidget extends StatelessWidget {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          CircleAvatar(
-                            maxRadius: 15,
-                            backgroundImage: NetworkImage(
-                                "https://uba.uz/upload/iblock/73f/bankipakyuli.jpg"),
+                          Padding(
+                            padding: EdgeInsets.symmetric(
+                                horizontal: 3, vertical: 3),
+                            child: CircleAvatar(
+                              maxRadius: 15,
+                              backgroundImage: NetworkImage(
+                                  "https://uba.uz/upload/iblock/73f/bankipakyuli.jpg"),
+                            ),
                           ),
                           Text(
                             'Humo  ',
@@ -68,6 +72,44 @@ class CardWidget extends StatelessWidget {
                       SizedBox(height: 10),
                       Text(
                         '   715 535 so\'m',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.w600,
+                            fontSize: 15),
+                      ),
+                    ],
+                  )),
+              SizedBox(height: 5),
+              Container(
+                  decoration: BoxDecoration(
+                      color: const Color.fromARGB(255, 119, 136, 158),
+                      borderRadius: BorderRadius.circular(10)),
+                  width: 150,
+                  height: 80,
+                  child: const Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Padding(
+                            padding: EdgeInsets.symmetric(
+                                horizontal: 3, vertical: 3),
+                            child: CircleAvatar(
+                              maxRadius: 15,
+                              backgroundImage: NetworkImage(
+                                  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-WZ6H2eSSN1UrxO2LAcxc9Ph-XSQ_FVhi3g&s"),
+                            ),
+                          ),
+                          Text(
+                            'UzCard  ',
+                            style: TextStyle(color: Colors.white),
+                          )
+                        ],
+                      ),
+                      SizedBox(height: 10),
+                      Text(
+                        '   500 234 so\'m',
                         style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.w600,

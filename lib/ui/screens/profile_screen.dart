@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:paynet_clone/register/enter_password.dart';
+import 'package:paynet_clone/test.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({super.key});
@@ -224,7 +224,7 @@ class ProfilePage extends StatelessWidget {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => EnterPassScreen()));
+                            builder: (context) => PinCodeWidget()));
                   },
                   icon: Icon(Icons.logout_rounded),
                   color: Colors.red,

@@ -4,6 +4,7 @@ import 'package:paynet_clone/ui/screens/history_screen.dart';
 import 'package:paynet_clone/ui/screens/home_scree.dart';
 import 'package:paynet_clone/ui/screens/payment_widget.dart';
 import 'package:paynet_clone/ui/screens/services_scren.dart';
+import 'package:paynet_clone/widgets/custom_navigationbar.dart';
 
 class ControlAllScreen extends StatefulWidget {
   const ControlAllScreen({super.key});
@@ -26,34 +27,14 @@ class _ControlAllScreenState extends State<ControlAllScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: bodyList[_currentIndex],
-      bottomNavigationBar: BottomNavigationBar(
+        body: bodyList[_currentIndex],
+        bottomNavigationBar: CustomBottomNavigationBar(
           currentIndex: _currentIndex,
           onTap: (index) {
             setState(() {
               _currentIndex = index;
             });
           },
-          showUnselectedLabels: true,
-          selectedItemColor: Colors.green,
-          unselectedItemColor: Colors.black,
-          selectedLabelStyle: const TextStyle(color: Colors.black),
-          items: const [
-            BottomNavigationBarItem(
-                backgroundColor: Colors.white,
-                label: 'Asosiy',
-                icon: Icon(Icons.home_outlined)),
-            BottomNavigationBarItem(
-                label: "O'tkazmalar", icon: Icon(Icons.currency_exchange)),
-            BottomNavigationBarItem(
-                label: "To'lov",
-                icon: Icon(Icons.account_balance_wallet_outlined)),
-            BottomNavigationBarItem(
-                label: "Tarix", icon: Icon(Icons.access_time)),
-            BottomNavigationBarItem(
-                label: "Xizmatlar",
-                icon: Icon(Icons.app_registration_outlined)),
-          ]),
-    );
+        ));
   }
 }
