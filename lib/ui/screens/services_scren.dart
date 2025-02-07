@@ -78,7 +78,7 @@ class ServicesPage extends StatelessWidget {
                     const SizedBox(height: 10),
                     Center(
                       child: const Text(
-                          "Eng yaxshi takliflarni qo'ldan boy bermaslik uchun yangilanishlarni kuzatib borish uchun buna bo'ling"),
+                          "Eng yaxshi takliflarni qo'ldan boy bermaslik uchun yangilanishlarni kuzatib borish uchun obuna bo'ling"),
                     ),
                     const SizedBox(height: 20),
                     ElevatedButton(
