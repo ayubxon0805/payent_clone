@@ -158,7 +158,7 @@ class _PinCodeWidgetState extends State<PinCodeWidget> {
             const SizedBox(height: 20),
             Center(
               child:
-                  Image.asset(width: 75, height: 75, 'assets/images/block.png'),
+                  Image.asset(width: 75, height: 75, 'assets/icons/icon.png'),
             ),
             const SizedBox(height: 10),
             Text(

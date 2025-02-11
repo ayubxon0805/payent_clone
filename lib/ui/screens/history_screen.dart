@@ -116,7 +116,7 @@ class _HistoryPageState extends State<HistoryPage> {
                     color: Color.fromARGB(255, 234, 232, 232)),
               ], borderRadius: BorderRadius.circular(15), color: Colors.white),
               width: maxWidth * 0.9,
-              height: maxHeight * 0.08,
+              height: maxHeight * 0.09,
               child: const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -141,7 +141,7 @@ class _HistoryPageState extends State<HistoryPage> {
             ),
             Container(
               width: maxWidth,
-              height: maxHeight * 0.23,
+              height: maxHeight * 0.25,
               color: Colors.white,
               child: Column(
                 children: [
@@ -160,7 +160,7 @@ class _HistoryPageState extends State<HistoryPage> {
             ),
             Container(
               width: maxWidth,
-              height: maxHeight * 0.23,
+              height: maxHeight * 0.25,
               color: Colors.white,
               child: Column(
                 children: [
@@ -180,7 +180,7 @@ class _HistoryPageState extends State<HistoryPage> {
             ),
             Container(
               width: maxWidth,
-              height: maxHeight * 0.23,
+              height: maxHeight * 0.25,
               color: Colors.white,
               child: Column(
                 children: [

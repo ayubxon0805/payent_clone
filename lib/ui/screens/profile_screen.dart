@@ -1,3 +1,4 @@
+import 'package:awesome_dialog/awesome_dialog.dart';
 import 'package:flutter/material.dart';
 import 'package:paynet_clone/ui/screens/support_screen.dart';
 import 'package:paynet_clone/widgets/pincode_widget.dart';
@@ -121,7 +122,7 @@ class ProfilePage extends StatelessWidget {
                     borderRadius: BorderRadius.circular(15),
                     color: Colors.white),
                 width: maxWidth * 0.9,
-                height: maxHeight * 0.45,
+                height: maxHeight * 0.46,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -183,7 +184,7 @@ class ProfilePage extends StatelessWidget {
                     borderRadius: BorderRadius.circular(15),
                     color: Colors.white),
                 width: maxWidth * 0.9,
-                height: maxHeight * 0.3,
+                height: maxHeight * 0.31,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
